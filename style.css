@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto, sans serif;
+}
+
+div.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100vh ;
+    justify-content: center;
+}
+
+.container h1{
+    margin-bottom: 24px;
+}
+
+div.login{
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.login h2{
+    margin-bottom: 24px;
+}
+
+div .login-user{
+    width: 300px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.login-user input{
+    width: 100%;
+    padding: 16px 0;
+    border: none;
+    border-bottom: 2px solid rgba(76, 0, 130, 0.774);
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+.login-user input ~ label{
+    position: absolute;
+    left: 0;
+    top: 18px;
+    color: #131313;
+    transition: .4s;
+}
+
+input:focus ~ label, input:valid ~ label{
+    transform: translateY(-20px);
+    color: rgba(76, 0, 130, 0.774);;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.login button{
+    background: rgba(76, 0, 130, 0.575);
+    color: #fff;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
