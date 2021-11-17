@@ -41,7 +41,7 @@ div .login-user{
     margin-bottom: 20px;
 }
 
-.login-user input{
+.login-input{
     width: 100%;
     padding: 16px 0;
     border: none;
@@ -49,6 +49,20 @@ div .login-user{
     background-color: transparent;
     outline: none;
     font-size: 16px;
+}
+
+.theme-input-error{
+    width: 100%;
+    padding: 16px 0;
+    border: none;
+    border-bottom: 2px solid rgb(245, 9, 9);
+    background-color: rgba(255, 0, 0, 0.466);
+    outline: none;
+    font-size: 16px;
+}
+.msg-error{
+    color: rgb(243, 9, 9);
+    margin-bottom: 10px;
 }
 
 .login-user input ~ label{
@@ -76,4 +90,14 @@ input:focus ~ label, input:valid ~ label{
     font-size: 16px;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.next-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    border: 2px dashed rgb(12, 235, 12) ;
+    color: rgb(16, 116, 7);
 }
